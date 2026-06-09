@@ -1,0 +1,337 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --max-width: 860px;
+    --color-bg: #fff;
+    --color-text: #222;
+    --color-muted: #666;
+    --color-accent: #2563eb;
+    --color-accent-hover: #1d4ed8;
+    --color-border: #e5e7eb;
+    --color-surface: #f9fafb;
+    --color-code-bg: #f3f4f6;
+    --font-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-mono: 'SF Mono', 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    background: var(--color-bg);
+    line-height: 1.6;
+}
+
+/* -- Header -------------------------------- */
+
+header {
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem 2rem;
+}
+
+header nav {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.site-name {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header a {
+    color: var(--color-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+header a:hover,
+header a.active {
+    color: var(--color-accent);
+}
+
+/* -- Hamburger ----------------------------- */
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: auto;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--color-text);
+    border-radius: 1px;
+}
+
+/* -- Dropdown ------------------------------ */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.caret {
+    font-size: 0.7em;
+    vertical-align: 1px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    list-style: none;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 0.5rem 0;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    z-index: 100;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 0.4rem 1rem;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background: var(--color-surface);
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-toggle:focus + .dropdown-menu,
+.dropdown-menu:focus-within {
+    display: block;
+}
+
+/* -- Main ---------------------------------- */
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* -- Typography ---------------------------- */
+
+article h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+article h2 { font-size: 1.35rem; margin: 2.5rem 0 0.75rem; }
+article h3 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+article p { margin-bottom: 1rem; }
+article ul, article ol { margin: 0 0 1rem 1.5rem; }
+article li { margin-bottom: 0.3rem; }
+article a { color: var(--color-accent); }
+article a:hover { color: var(--color-accent-hover); }
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+article blockquote {
+    border-left: 3px solid var(--color-border);
+    padding-left: 1rem;
+    color: var(--color-muted);
+    margin: 1rem 0;
+}
+
+.lead {
+    font-size: 1.15rem;
+    color: var(--color-muted);
+    line-height: 1.7;
+}
+
+/* -- Code ---------------------------------- */
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.88em;
+    background: var(--color-code-bg);
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1rem 0 1.5rem;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    font-size: 0.875rem;
+    color: inherit;
+}
+
+/* -- Parameter tables ---------------------- */
+
+.param-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.95rem;
+}
+
+.param-table td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+}
+
+.param-table td:first-child {
+    white-space: nowrap;
+    width: 1%;
+}
+
+/* -- Hero ---------------------------------- */
+
+.hero {
+    margin-bottom: 3rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+}
+
+/* -- Features (home) ----------------------- */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.feature h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+.feature p {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+/* -- Doc sections (home) ------------------- */
+
+.doc-section {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.doc-section h2 {
+    font-size: 1.35rem;
+    margin: 0 0 0.75rem;
+}
+
+.doc-section p { margin-bottom: 1rem; }
+.doc-section ol { margin: 0 0 1rem 1.5rem; }
+.doc-section li { margin-bottom: 0.3rem; }
+.doc-section a { color: var(--color-accent); }
+.doc-section a:hover { color: var(--color-accent-hover); }
+
+/* -- Footer -------------------------------- */
+
+footer {
+    border-top: 1px solid var(--color-border);
+    padding: 2rem;
+    text-align: center;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+}
+
+/* -- Responsive ---------------------------- */
+
+@media (max-width: 700px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 0;
+        padding-top: 0.75rem;
+    }
+
+    header nav.open .nav-links {
+        display: flex;
+    }
+
+    .nav-links > li {
+        width: 100%;
+    }
+
+    .nav-links > li > a,
+    .dropdown-toggle {
+        display: block;
+        padding: 0.5rem 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: none;
+        padding: 0 0 0 1rem;
+    }
+
+    .dropdown-menu li a {
+        padding: 0.4rem 0;
+    }
+
+    .dropdown.open > .dropdown-menu {
+        display: block;
+    }
+
+    .hero h1 { font-size: 1.8rem; }
+}

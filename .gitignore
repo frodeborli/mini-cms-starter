@@ -1,0 +1,23 @@
+vendor/
+_database.sqlite3
+uploads/
+.cms/
+site.ini
+html.wordpress-backup/
+mini-cms/
+
+HOSTING-README.md
+AGENTS.md
+
+# Home directory files
+.bash_history
+.bash_logout
+.bashrc
+.profile
+.cache/
+.config/
+.local/
+.npm/
+.ssh/
+.claude/
+.claude.json
