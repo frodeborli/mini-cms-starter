@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "fubber/mini",
-            "version": "v0.17.2",
+            "version": "v0.17.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/frodeborli/fubber-mini.git",
-                "reference": "fa9af6d494fa0ffa1270e70f08c8bad5ff869325"
+                "reference": "860751432065bd1e1a43f65507b8c259ae3c294f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/frodeborli/fubber-mini/zipball/fa9af6d494fa0ffa1270e70f08c8bad5ff869325",
-                "reference": "fa9af6d494fa0ffa1270e70f08c8bad5ff869325",
+                "url": "https://api.github.com/repos/frodeborli/fubber-mini/zipball/860751432065bd1e1a43f65507b8c259ae3c294f",
+                "reference": "860751432065bd1e1a43f65507b8c259ae3c294f",
                 "shasum": ""
             },
             "require": {
@@ -149,20 +149,20 @@
                 "issues": "https://github.com/frodeborli/fubber-mini/issues",
                 "source": "https://github.com/frodeborli/fubber-mini"
             },
-            "time": "2026-06-09T17:44:47+00:00"
+            "time": "2026-06-09T22:56:42+00:00"
         },
         {
             "name": "fubber/mini-cms",
-            "version": "v0.2.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/frodeborli/fubber-mini-cms.git",
-                "reference": "075f84541effad21c4df5ec7a9d6fbc496f50abe"
+                "reference": "60f3c74a73b19ece393032b369ed0390e882232a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/frodeborli/fubber-mini-cms/zipball/075f84541effad21c4df5ec7a9d6fbc496f50abe",
-                "reference": "075f84541effad21c4df5ec7a9d6fbc496f50abe",
+                "url": "https://api.github.com/repos/frodeborli/fubber-mini-cms/zipball/60f3c74a73b19ece393032b369ed0390e882232a",
+                "reference": "60f3c74a73b19ece393032b369ed0390e882232a",
                 "shasum": ""
             },
             "require": {
@@ -192,9 +192,9 @@
             "homepage": "https://github.com/frodeborli/mini-cms",
             "support": {
                 "issues": "https://github.com/frodeborli/fubber-mini-cms/issues",
-                "source": "https://github.com/frodeborli/fubber-mini-cms/tree/v0.2.0"
+                "source": "https://github.com/frodeborli/fubber-mini-cms/tree/v0.2.1"
             },
-            "time": "2026-06-09T19:09:07+00:00"
+            "time": "2026-06-09T20:28:29+00:00"
         },
         {
             "name": "psr/container",
