@@ -21,3 +21,4 @@ AGENTS.md
 .ssh/
 .claude/
 .claude.json
+.codex/
