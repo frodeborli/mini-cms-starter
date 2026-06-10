@@ -4,7 +4,7 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "fubber/mini-cms": "^0.3.0"
+        "fubber/mini-cms": "*"
     },
     "autoload": {
         "psr-4": {
